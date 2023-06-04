@@ -1,167 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 body, a, p, h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif !important;
-    color: #fff;
+  font-family: 'Space Grotesk', sans-serif !important;
+  color: #000 !important;
 }
 
-body {
-    background-color: rgb(0, 0, 0) !important;
+.uk-navbar-container {
+  backdrop-filter: blur(16px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background-color: rgba(255, 255, 255, 0.34);
 }
 
-::-webkit-scrollbar {
-    display: none;
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  backdrop-filter: blur(16px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background-color: rgba(255, 255, 255, 0.34);
 }
 
-::-moz-selection { 
-    background-color: #979797; 
-    color: #ffffff;
-}
-    
-::selection {
-    background-color: #979797;
-    color: #ffffff;
+.uk-navbar-right a:hover{
+  color: #389075 !important;
 }
 
-.uk-black {
-    background-color: rgb(0, 0, 0);
+.uk-button-text::before {
+  border-bottom-color: #389075 !important;
 }
 
-.nav {
-    position: absolute;
-    margin-top: 0px !important;
+.highlight {
+  text-decoration: underline;
+  color: #389075 !important;
+  font-weight: 400;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: row;
-    min-width: 10000px;
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
-}
-  
-.outter-wrapper {
-    width: 100vh;
-    height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform-origin: top left;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: absolute;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+.uk-card-default {
+  background-color: #F1F3F3;
+  color: #666;
+  box-shadow: 0 0px 0px rgba(0,0,0,0) !important;
+  border-radius: 5px;
 }
 
-.uk-container {
-    margin-left: 0;
-    margin-right: 0;
+.uk-card-large.uk-card-body {
+  padding: 90px 70px;
 }
 
-.p-header p{
-    transform: rotate(-90deg);
-    color: #389075;
-    opacity: 0.2;
-    font-weight: 900;
-    font-size: 10em;
-    margin-left: -100px;;
+.card-mobile{
+  padding: 50px 40px !important;
 }
 
-.uk-width-large {
-    width: 400px !important;
+.uk-card p {
+  font-weight: 400;
 }
 
-@media (min-width: 960px) { 
-    .uk-container {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-@media (min-width: 640px) {
-    .uk-container {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+.card-inner {
+  top: 0;
+  transition: top ease 0.5s;
+  box-shadow: 0 14px 25px rgba(0,0,0,.07);
+  border-radius: 5px !important;
 }
 
-section img {
-    width: 200px;
+.card-inner img {
+  border-radius: 5px !important;
 }
 
-/* Cursor */
-.txt-type > .txt {
-    border-right: 0.1rem solid #fff;
+.uk-card:hover .card-inner {
+  top: -10px !important;
+  box-shadow: 0 14px 25px rgba(0,0,0,.16);
 }
 
-.txt-typ, .txt-type {
-    text-decoration: underline;
+.uk-grid-medium a:hover {
+  text-decoration: none !important;
 }
 
-.contact a:hover {
-    color: rgb(175, 175, 175) !important;
+.uk-grid-medium a:hover p{
+  color:#389075 !important; 
 }
 
-.contact legend {
-    font-weight: 300; 
-    font-size: 2.2rem;
+.uk-section-primary {
+  background-color: #fff !important;
 }
 
-.uk-input, .uk-textarea{
-    background-color: rgb(0, 0, 0);
-    border-width: 1px !important;
-    color: rgb(251, 251, 251);
+.uk-margin-small-top {
+  margin-top: 0px!important;
 }
 
-.uk-input:focus {
-    background: rgb(0, 0, 0) !important;
-}
-
-.uk-textarea:focus {
-    background: rgb(0, 0, 0) !important;
-}
-
-.socials {
-    display: inline-block;
-}
-
-.twitter:hover{
-    color: rgb(22, 123, 255) !important;
-}
-
-.instagram:hover{
-    color: rgb(255, 59, 108) !important;
-}
-
-.github:hover{
-    color: rgb(105, 105, 105) !important;
-}
-
-.dribbble:hover{
-    color: #ea4c89 !important;
-}
-
-.aslan a{
-    background-image: linear-gradient(to right,#04CCBF,#02A2F2);
-    background-clip: text;
-    display: inline-block;
-    -webkit-text-fill-color: #00000000;
-}
-
-.aslan a:hover {
-    text-decoration: underline !important;
-}
-
-.core a:hover {
-    text-decoration: underline !important;
-    color:#C7442C !important;
-}
-
-.fireworks a:hover {
-    text-decoration: underline !important;
-    color:#ED3237 !important;
-}
-
-.uk-icon-image {
-    width: 56px !important;
-    height: 20px !important;
-
-}
